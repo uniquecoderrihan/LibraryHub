@@ -1,6 +1,11 @@
+import { useState } from "react";
 
 const Navbar = () => {
-
+    // State to track the current theme
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    const toggleTheme = () => {
+        setIsDarkMode(prevMode => !prevMode);
+    };
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -23,6 +28,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+                <input type="checkbox" className="toggle" checked={isDarkMode} />
                 <a className="btn btn-2xl text-2xl">Login</a>
             </div>
         </div>

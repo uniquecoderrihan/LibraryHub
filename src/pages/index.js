@@ -12,7 +12,7 @@ export default function Home() {
       <button className="btn btn-primary">Primary</button>
       <button className="btn btn-secondary">Secondary</button>
       <button className="btn btn-accent">Accent</button>
-      
+      <input type="checkbox" className="toggle" checked />
     </main>
   );
 }
