@@ -6,7 +6,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md flex">
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"  />
+                    <input type="text" placeholder="Type Book Name.." className="input input-bordered w-full max-w-xs"  />
                     <button className='btn'>Search</button>
                 </div>
             </div>
