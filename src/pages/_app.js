@@ -1,9 +1,11 @@
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  return <main>
-    <p>This is Nabvar</p>
+  return <div className="px-5">
+  <Navbar/>
     <Component {...pageProps} />
-    <p>This is FOoter</p>
-  </main>;
+    <Footer/>
+    </div>;
 }
